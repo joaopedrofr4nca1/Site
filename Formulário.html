@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=<!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+        <title>Site João Pedro 2b</title>
+    <div>
+        <h1 id="titulo">Formulário</h1>
+        <p id="subtitulo">Preencha com suas informações</p>
+        <br>
+    </div>
+
+    <!-- Início do formulário -->
+    <form>
+
+        <fieldset class="grupo">
+            <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset> 
+
+        <!-- Campo de email com-->
+        <div class="campo">
+            <fieldset class="grupo">
+                
+                <label for="email"><strong>Email Cadastrado</strong></label>
+                <input type="email" name="email" id="email" required>
+            </fieldset>
+        </div>
+
+        <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+        <div class="campo">
+            <fieldset class="grupo">
+
+
+
+                <label><strong>O que você é?</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>Estudante
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="backend">Trabalhador
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="fullstack">Aposentado
+                </label>
+            </div>
+
+            </fieldset>
+
+        <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
+        <fieldset class="grupo">
+            
+            <div class="campo">
+                <label for="senioridade"><strong>Idade</strong></label>
+                <select id="senioridade" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>-18</option>
+                  <option>Entre 18 e 60</option>
+                  <option>+60</option>
+                </select>
+            </div>
+        </fieldset>
+        <div class="campo">
+            <fieldset class="grupo">     
+                <label><strong>Você estudante , teve que trabalhar enquanto esstudava?</strong></label>
+
+                <input type="radio" name="devweb" value="frontend" checked>Sim
+                <input type="radio" name="devweb" value="backend">Não
+            </fieldset>
+            <label>
+            </label>
+            <label>
+            </label>
+            
+        </div>
+        <div class="campo">
+            <fieldset class="grupo">     
+                <label><strong>Você teve que abandonar os estudos para trabalha?</strong></label>
+
+                <input type="radio" name="devweb" value="frontend" checked>Sim
+                <input type="radio" name="devweb" value="backend">Não
+            </fieldset>
+            <label>
+            </label>
+            <label>
+            </label>
+            
+        </div>
+        <div class="campo">
+            <fieldset class="grupo">     
+                <label><strong>Você que abandonou os estudos, tem interesse em voltar a estudar?</strong></label>
+
+                <input type="radio" name="devweb" value="frontend" checked>Sim
+                <input type="radio" name="devweb" value="backend">Não
+            </fieldset>
+            <label>
+            </label>
+            <label>
+            </label>
+            
+        </div>
+        <fieldset class="grupo">
+            
+            <div class="campo">
+                <label for="senioridade"><strong>Qual nível de escolaridade dos seu pais?</strong></label>
+                <select id="senioridade" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Ensino fundamental completo.</option>
+                  <option>Ensino fundamental incompleto</option>
+                  <option>Ensino médio completo</option>
+                  <option>Ensino médio incompleto</option>
+                </select>
+                </fieldset>
+            </div>
+            <div class="campo">
+                <fieldset class="grupo">     
+                    <label><strong>Você conhece alguem que teve que abandonar os estudos porque precisava trabalhar??</strong></label>
+    
+                    <input type="radio" name="devweb" value="frontend" checked>Sim
+                    <input type="radio" name="devweb" value="backend">Não
+                </fieldset>
+                <label>
+                </label>
+                <label>
+                </label>
+                
+            </div>
+            <fieldset>
+
+                <div class="campo">
+                    <br>
+                    <label  class="ajustar" for="experiencia"><strong>Quais os motivos que a pessoa informa? </strong></label>
+                    <textarea rows="6" style="width: 20em" id="experiencia" name="experiencia"></textarea>
+                </div>
+            </fieldset>
+
+        
+        <fieldset class="grupo">
+            <!-- Campo de tecnologias para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+           
+        
+
+        <!-- Caixa de texto -->
+       
+
+        <!-- Botão para enviar o formulário -->
+        <button class="botao" type="submit" onsubmit="">Concluído</button>            
+
+    </form>
+</head>
+
+    
+</html>
